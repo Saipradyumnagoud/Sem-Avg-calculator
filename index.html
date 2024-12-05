@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="calculatorForm">
+            <h1>Marks Calculator</h1>
+
+            <span class="input-span">
+                <label for="minor1" class="label">Minor 1</label>
+                <input type="number" id="minor1" max="10" required />
+            </span>
+            <span class="input-span">
+                <label for="minor2" class="label">Minor 2</label>
+                <input type="number" id="minor2" max="10" required />
+            </span>
+            <span class="input-span">
+                <label for="assignment1" class="label">Assignment 1</label>
+                <input type="number" id="assignment1" max="10" required />
+            </span>
+            <span class="input-span">
+                <label for="assignment2" class="label">Assignment 2</label>
+                <input type="number" id="assignment2" max="10" required />
+            </span>
+            <span class="input-span">
+                <label for="cpMarks" class="label">CP Marks</label>
+                <input type="number" id="cpMarks" max="10" required />
+            </span>
+            <span class="input-span">
+                <label for="crpMarks" class="label">CRP Marks</label>
+                <input type="number" id="crpMarks" max="10" required />
+            </span>
+
+            <span class="input-span">
+                <label for="mid1" class="label">Mid 1</label>
+                <input type="number" id="mid1" required />
+            </span>
+            <span class="input-span">
+                <label for="mid2" class="label">Mid 2</label>
+                <input type="number" id="mid2" required />
+            </span>
+
+            <input class="submit" type="button" value="Calculate" id="calculateBtn" />
+
+            <div id="results">
+                <p id="averageResult"></p>
+                <p id="percentageSumResult"></p>
+                <p id="totalMarksResult"></p>
+            </div>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
